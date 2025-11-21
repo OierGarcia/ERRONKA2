@@ -12,3 +12,17 @@ Interfaces de red:
 6) Vlan71 - Cluster
 
 Las interfaces de ASIR-TX van a ser 10.x, 20.x, 30.x y 40.x
+
+
+# Enpresaren planteamendua
+
+ ## Puneta.lan
+
+ DNS,DHCP
+
+ ### Erabiltzaileak
+ OU: Puneteroak eta Bezeroak
+
+ Taldeak: 
+ Puneteroak(Marketing, Administrazioa, Datubase admin, Docker-Users)
+ Bezeroak(Ikaslea, Irakasleak)
