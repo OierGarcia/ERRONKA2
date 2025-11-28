@@ -26,3 +26,4 @@ Las interfaces de ASIR-TX van a ser 10.x, 20.x, 30.x y 40.x
  Taldeak: 
  Puneteroak(Marketing, Administrazioa, Datubase admin, Docker-Users)
  Bezeroak(Ikaslea, Irakasleak)
+Para buscar la intranet la url sera intranet.puneta.lan
