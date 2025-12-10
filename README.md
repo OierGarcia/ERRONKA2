@@ -29,7 +29,8 @@ Las interfaces de ASIR-TX van a ser 10.x, 20.x, 30.x y 40.x
 Para buscar la intranet la url sera intranet.puneta.lan
 
 
-IP-ak:
+# IP-ak:
+
 192.168.30.40 --> ubuntu server, arduinoaren datuak gordetzeko mysql
 
 192.168.30.2 --> Windows Server DFS egiteko 
