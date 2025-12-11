@@ -17,11 +17,11 @@ TFT_eSPI tft = TFT_eSPI();
 DHTesp dht;
 
 // -------------------- WIFI ------------------------
-const char* ssid     = "barbudo";
-const char* password = "Admin123";
+const char* ssid     = "mainol";
+const char* password = "BryantMyers67";
 
 // -------------------- API PHP ---------------------
-const char* serverURL = "http://192.168.1.21/guardar.php";   // <-- CAMBIA ESTO
+const char* serverURL = "http://192.168.71.230/guardar.php";   // <-- CAMBIA ESTO
 
 // -------------------- VALORES ---------------------
 float lastTemp = NAN;
