@@ -31,7 +31,7 @@ Para buscar la intranet la url sera intranet.puneta.lan
 
 # IP-ak:
 
-192.168.30.40 --> ubuntu server, arduinoaren datuak gordetzeko mysql
+192.168.71.64 --> ubuntu server, arduinoaren datuak gordetzeko mysql
 
 192.168.30.2 --> Windows Server DFS egiteko 
 
