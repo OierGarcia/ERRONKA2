@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Hola](README.md)
+* [Page](README.md)
