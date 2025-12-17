@@ -21,7 +21,7 @@ const char* ssid     = "mainol";
 const char* password = "BryantMyers67";
 
 // -------------------- API PHP ---------------------
-const char* serverURL = "http://192.168.71.230/guardar.php";   // <-- CAMBIA ESTO
+const char* serverURL = "http://192.168.71.230/guardar.php";
 
 // -------------------- VALORES ---------------------
 float lastTemp = NAN;
@@ -118,7 +118,7 @@ void sendToServer(float temp, float hum, int sound, int detect, int pir) {
 void setup() {
   Serial.begin(115200);
   delay(1000);   // pequeño delay para que el puerto serie se estabilice
-  Serial.println("\n\n===== ESP32 INICIANDO (simulación DHT) =====");
+  Serial.println("\n\n===== ESP32 INICIANDO =====");
 
   tft.init();
   tft.setRotation(1);
@@ -162,9 +162,9 @@ void loop() {
     // Generamos valores random y los usamos como "lectura"
     lastTemp = randomTemperature();
     lastHum  = randomHumidity();
-    Serial.print("Temp (sim): ");
+    Serial.print("Temp: ");
     Serial.print(lastTemp);
-    Serial.print("  Hum (sim): ");
+    Serial.print("  Hum: ");
     Serial.println(lastHum);
 
     // ----------- SONIDO -----------
@@ -181,10 +181,8 @@ void loop() {
     Serial.println(lastPIR);
 
     // ----------- ENVIAR -----------
-    // ahora enviamos aunque los valores sean simulados (si quieres evitarlos,
-    // comenta esta parte)
     if (!isnan(lastTemp) && !isnan(lastHum)) {
-      Serial.println("Enviando datos al servidor (simulados)...");
+      Serial.println("Enviando datos al servidor...");
       sendToServer(lastTemp, lastHum, lastSound, lastDetect, lastPIR);
     } else {
       Serial.println("No se envian datos porque temp/hum son NaN");
